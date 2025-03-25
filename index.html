@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Accueil</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="index_style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+
+<!-- Header -->
+<body>
+	<section class="header">
+		<a href="#">
+			<img class="logo-icon" src="images/logo.png" alt="logo">
+		</a>
+		<div class="navigation-pill-list">
+			<div class="navigation-pill dropdown">
+				<a href="#" class="title3">Services</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Service 1</a></li>
+					<li><a href="#">Service 2</a></li>
+					<li><a href="#">Service 4</a></li>
+					<li><a href="#">Service 5</a></li>
+					<li><a href="#">Service 6</a></li>
+					<li><a href="#">Service 7</a></li>
+					<li><a href="#">Service 8</a></li>
+					<li><a href="#">Service 9</a></li>
+					<li><a href="#">Service 10</a></li>
+					<li><a href="#">Service 11</a></li>
+					<li><a href="#">Service 12</a></li>
+				</ul>
+			</div>
+			<div class="navigation-pill">
+				<a href="#" class="title3">Réalisations</a>
+			</div>
+			<div class="navigation-pill">
+				<a href="#" class="title3">Contacts</a>
+			</div>
+			<div class="navigation-pill">
+				<a href="#" class="title3">FAQ</a>
+			</div>
+		</div>
+	</section>
+
+
+
+<!-- Main -->
+<section class="carousel">
+	<div class="carousel-overlay">
+        <h2>Lucas's Garden</h2>
+        <p>Bienvenue</p>
+    </div>
+    <div class="carousel-container">
+        <div class="carousel-slide"><img src="images/jardin1.jpg" alt="Photo 1"></div>
+        <div class="carousel-slide"><img src="images/jardin2.jpg" alt="Photo 2"></div>
+        <div class="carousel-slide"><img src="images/jardin3.jpg" alt="Photo 3"></div>
+        <div class="carousel-slide"><img src="images/jardin4.jpg" alt="Photo 4"></div>
+        <div class="carousel-slide"><img src="images/jardin5.jpg" alt="Photo 5"></div>
+        <div class="carousel-slide"><img src="images/jardin6.jpg" alt="Photo 6"></div>
+    </div>
+	<button class="prev" onclick="prevSlide()">&#10094;</button>
+	<button class="next" onclick="nextSlide()">&#10095;</button>
+</section>
+
+<script>
+    let index = 0;
+    function showSlide() {
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+        if (index >= totalSlides) index = 0;
+        if (index < 0) index = totalSlides - 1;
+        document.querySelector('.carousel-container').style.transform = `translateX(-${index * 100}%)`;
+    }
+    function nextSlide() {
+        index++;
+        showSlide();
+    }
+    function prevSlide() {
+        index--;
+        showSlide();
+    }
+    setInterval(nextSlide, 5000);
+</script>
+
+
+<!-- Catalogue -->
+		<div class="card-grid-image">
+
+		<div class="text-content-heading">
+			<div class="heading">Mes travaux</div>
+			<div class="subheading">Plantes</div>
+		</div>
+
+		<div class="line_cards">
+
+				<div class="card">
+					<img class="image-icon" alt="rose" src="images/rose.png">
+					<div class="body">
+						<div class="text">
+							<div class="heading">Rose</div>
+							<div class="card_text">Symbole de l'amour et de la passion, la rose existe en différentes couleurs, chacune ayant une signification particulière (rouge pour l’amour, blanche pour la pureté, jaune pour l’amitié).</div>
+						</div>
+							<div class="button-group">
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<img class="image-icon" alt="lys" src="images/lys.png">
+					<div class="body">
+						<div class="text">
+							<div class="heading">Lys</div>
+							<div class="card_text">Fleur élégante et majestueuse, souvent associée à la pureté et à la royauté. Elle est très utilisée dans les bouquets de mariage et les cérémonies. Elle représentait la France à une certaine periode.</div>
+						</div>
+							<div class="button-group">
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<img class="image-icon" alt="tournesol" src="images/tournesol.png">
+					<div class="body">
+						<div class="text">
+							<div class="heading">Tournesol</div>
+							<div class="card_text">Reconnaissable par sa grande taille et sa couleur jaune éclatante, le tournesol symbolise la joie et l’énergie. Il suit la lumière du soleil au cours de la journée.</div>
+						</div>
+							<div class="button-group">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		<div class="line_cards">
+
+				<div class="card">
+					<img class="image-icon" alt="orchidee" src="images/orchidee.png">
+					<div class="body">
+						<div class="text">
+							<div class="heading">Orchidée</div>
+							<div class="card_text">Fleur exotique et sophistiquée, elle représente la beauté, la grâce et la rareté. Elle est souvent offerte comme un signe d’admiration. Réputé sur les îles, on peut la voir à Hawaï.</div>
+						</div>
+							<div class="button-group">
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<img class="image-icon" alt="coquelicot" src="images/coquelicot.png">
+					<div class="body">
+						<div class="text">
+							<div class="heading">Coquelicot</div>
+							<div class="card_text">Cette fleur rouge vif pousse souvent dans les champs et symbolise à la fois le repos et le souvenir, notamment en hommage aux soldats tombés au combat.</div>
+						</div>
+							<div class="button-group">
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<img class="image-icon" alt="violette" src="images/violette.png">
+					<div class="body">
+						<div class="text">
+							<div class="heading">Violette</div>
+							<div class="card_text">Petite fleur discrète mais parfumée, la violette est associée à la modestie et à la fidélité. Elle est souvent utilisée pour parfumer des cosmétiques et des confiseries.</div>
+						</div>
+							<div class="button-group">
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+
+
+<!-- Avis -->
+			<div class="card-grid-reviews">
+				<div class="text-heading">
+					<div class="text-heading1">Dernières critiques</div>
+					</div>
+
+
+					<div class="card-grid">
+						<div class="review-card">
+							<div class="rating">
+								<img class="star-icon" alt="star" src="images/Star.png">
+								<img class="star-icon" alt="star" src="images/Star.png">
+								<img class="star-icon" alt="star" src="images/Star.png">
+								<img class="star-icon" alt="star" src="images/Star.png">
+							</div>
+						<div class="review-body">
+							<div class="text-heading">
+								<div class="text-heading1">Génial</div>
+							</div>
+								<div class="text">
+									<div class="subtitles">Un jardin qui fait du bien</div>
+								</div>
+							</div>
+						<div class="avatar-block">
+							<img class="avatar-icon" alt="femme" src="images/Viviane.png">
+						<div class="info">
+							<div class="title">Viviane</div>
+							<div class="description">09/12/24</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="review-card">
+					<div class="rating">
+						<img class="star-icon" alt="star" src="images/Star.png">
+						<img class="star-icon" alt="star" src="images/Star.png">
+						<img class="star-icon" alt="star" src="images/Star.png">
+						<img class="star-icon" alt="star" src="images/Star.png">
+						<img class="star-icon" alt="star" src="images/Star.png">
+					</div>
+				<div class="review-body">
+					<div class="text-heading">
+						<div class="text-heading1">Expérience incroyable</div>
+				</div>
+					<div class="text">
+						<div class="subtitles">J’ai jamais vu aussi beau</div>
+					</div>
+				</div>
+					<div class="avatar-block">
+						<img class="avatar-icon" alt="" src="images/Louise.png">
+					<div class="info">
+						<div class="title">Louise</div>
+						<div class="description">18/11/24</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="review-card">
+						<div class="rating">
+							<img class="star-icon" alt="" src="images/Star.png">
+							<img class="star-icon" alt="" src="images/Star.png">
+							<img class="star-icon" alt="" src="images/Star.png">
+							<img class="star-icon" alt="" src="images/Star.png">
+							<img class="star-icon" alt="" src="images/Star.png">
+						</div>
+				<div class="review-body">
+					<div class="text-heading">
+						<div class="text-heading1">Bouche-bée</div>
+					</div>
+				<div class="text">
+					<div class="subtitles">J’ai pas les mots</div>
+					</div>
+				</div>
+				<div class="avatar-block">
+						<img class="avatar-icon" alt="" src="images/Marcel.png">
+				<div class="info">
+					<div class="title">Marcel</div>
+					<div class="description">13/12/24</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Footer -->
+
+  	<div class="footer">
+    		<div class="button-list">
+      			<img class="socialmedia-icon" alt="logo_x" src="images/x_logo.png">
+      			
+      			<img class="socialmedia-icon" alt="logo_instagram" src="images/instagram_logo.png">
+      			
+      			<img class="socialmedia-icon" alt="logo_youtube" src="images/youtube_logo.png">
+      			
+      			<img class="socialmedia-icon" alt="logo_linkedin" src="images/linkedin_logo.png">
+    		</div>
+
+	
+
+    		<div class="mentions">
+      			<div class="mentions-tittle">
+          					<div class="text-strong">Mentions légales</div>
+        				</div>
+      	
+
+					<div class="list">
+							<div class="list-item">Numéro d'immatriculation</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Adresse du siège social</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Données personnelles</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Politique de confidentialité</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Charte légale</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Conditions d'utilisations</div>
+					</div>
+				</div>
+
+
+
+    		<div class="decouverte">
+      			<div class="mentions-tittle">
+        				<div class="text-strong">
+          					<div class="text-strong">Découverte</div>
+        				</div>
+      			</div>
+
+					<div class="list">
+							<div class="list-item">Newsletters</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Collaborations</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Twitter</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Instagram</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Linkedin</div>
+					</div>
+				</div>
+
+
+
+    		<div class="contact">
+      			<div class="mentions-tittle">
+        				<div class="text-strong">
+          					<div class="text-strong">Contact</div>
+        				</div>
+      			</div>
+
+					<div class="list">
+							<div class="list-item">Paul DECHEWSKY</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Tel : 01 63 45 85 56</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Fax : 01 63 45 78 52</div>
+					</div>
+					<div class="list">
+							<div class="list-item"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCGmFJVfbcwrKfDFCtHbSVwNnvMkBmjMrcNHdtgQWrBDfRKdBtwGnbKDCqhpqtTWgbJLqq" target="_blank">Dedal@gmail.com </a></div>
+					</div>
+					<div class="list">
+							<div class="list-item"><a href="https://www.google.fr/maps/place/10+Av.+de+la+R%C3%A9publique,+75011+Paris/@48.8665245,2.3617706,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e08126fa2a3:0x8df64dfbdee88e8a!8m2!3d48.8665246!4d2.3666415!16s%2Fg%2F11bw40n1v2?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">10 Rue de la République, 75000, Paris</a></div>
+					</div>
+				</div>
+  		</div>
+  	  		  	
+</body>
+</html>
