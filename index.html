@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-
+<body>
 
 <!-- Header -->
-<body>
-	<section class="header">
+	<header>
 		<a href="#">
 			<img class="logo-icon" src="images/logo.png" alt="logo">
 		</a>
-		<div class="navigation-pill-list">
+		
+		<nav class="navigation-pill-list">
 			<div class="navigation-pill dropdown">
 				<a href="#" class="title3">Services</a>
 				<ul class="dropdown-menu">
@@ -41,56 +41,56 @@
 			<div class="navigation-pill">
 				<a href="faq.html" class="title3">FAQ</a>
 			</div>
-		</div>
-	</section>
+		</nav>
+	</header>
 
 
 
 <!-- Main -->
-<section class="carousel">
-	<div class="carousel-overlay">
-        <h2>Lucas's Garden</h2>
-        <p>Bienvenue</p>
-    </div>
-    <div class="carousel-container">
-        <div class="carousel-slide"><img src="images/jardin1.jpg" alt="Photo 1"></div>
-        <div class="carousel-slide"><img src="images/jardin2.jpg" alt="Photo 2"></div>
-        <div class="carousel-slide"><img src="images/jardin3.jpg" alt="Photo 3"></div>
-        <div class="carousel-slide"><img src="images/jardin4.jpg" alt="Photo 4"></div>
-        <div class="carousel-slide"><img src="images/jardin5.jpg" alt="Photo 5"></div>
-        <div class="carousel-slide"><img src="images/jardin6.jpg" alt="Photo 6"></div>
-    </div>
-	<button class="prev" onclick="prevSlide()">&#10094;</button>
-	<button class="next" onclick="nextSlide()">&#10095;</button>
-</section>
+	<main>
+		<div class="carousel-overlay">
+			<h1>Lucas's Garden</h1>
+			<h2>Bienvenue</h2>
+		</div>
+		<div class="carousel-container">
+			<div class="carousel-slide"><img src="images/jardin1.jpg" alt="Photo 1"></div>
+			<div class="carousel-slide"><img src="images/jardin2.jpg" alt="Photo 2"></div>
+			<div class="carousel-slide"><img src="images/jardin3.jpg" alt="Photo 3"></div>
+			<div class="carousel-slide"><img src="images/jardin4.jpg" alt="Photo 4"></div>
+			<div class="carousel-slide"><img src="images/jardin5.jpg" alt="Photo 5"></div>
+			<div class="carousel-slide"><img src="images/jardin6.jpg" alt="Photo 6"></div>
+		</div>
+		<button class="prev" onclick="prevSlide()">&#10094;</button>
+		<button class="next" onclick="nextSlide()">&#10095;</button>
+	</main>
 
-<script>
-    let index = 0;
-    function showSlide() {
-        const slides = document.querySelectorAll('.carousel-slide');
-        const totalSlides = slides.length;
-        if (index >= totalSlides) index = 0;
-        if (index < 0) index = totalSlides - 1;
-        document.querySelector('.carousel-container').style.transform = `translateX(-${index * 100}%)`;
-    }
-    function nextSlide() {
-        index++;
-        showSlide();
-    }
-    function prevSlide() {
-        index--;
-        showSlide();
-    }
-    setInterval(nextSlide, 5000);
-</script>
+	<script>
+		let index = 0;
+		function showSlide() {
+			const slides = document.querySelectorAll('.carousel-slide');
+			const totalSlides = slides.length;
+			if (index >= totalSlides) index = 0;
+			if (index < 0) index = totalSlides - 1;
+			document.querySelector('.carousel-container').style.transform = `translateX(-${index * 100}%)`;
+		}
+		function nextSlide() {
+			index++;
+			showSlide();
+		}
+		function prevSlide() {
+			index--;
+			showSlide();
+		}
+		setInterval(nextSlide, 5000);
+	</script>
 
 
 <!-- Catalogue -->
-		<div class="card-grid-image">
+	<section class="card-grid-image">
 
 		<div class="text-content-heading">
-			<div class="heading">Mes travaux</div>
-			<div class="subheading">Plantes</div>
+			<h3>Mes travaux</h3>
+			<h4>Plantes</h4>
 		</div>
 
 		<div class="line_cards">
@@ -99,7 +99,7 @@
 					<img class="image-icon" alt="rose" src="images/rose.png">
 					<div class="body">
 						<div class="text">
-							<div class="heading">Rose</div>
+							<h3>Rose</h3>
 							<div class="card_text">Symbole de l'amour et de la passion, la rose existe en différentes couleurs, chacune ayant une signification particulière (rouge pour l’amour, blanche pour la pureté, jaune pour l’amitié).</div>
 						</div>
 							<div class="button-group">
@@ -111,7 +111,7 @@
 					<img class="image-icon" alt="lys" src="images/lys.png">
 					<div class="body">
 						<div class="text">
-							<div class="heading">Lys</div>
+							<h3>Lys</h3>
 							<div class="card_text">Fleur élégante et majestueuse, souvent associée à la pureté et à la royauté. Elle est très utilisée dans les bouquets de mariage et les cérémonies. Elle représentait la France à une certaine periode.</div>
 						</div>
 							<div class="button-group">
@@ -123,7 +123,7 @@
 					<img class="image-icon" alt="tournesol" src="images/tournesol.png">
 					<div class="body">
 						<div class="text">
-							<div class="heading">Tournesol</div>
+							<h3>Tournesol</h3>
 							<div class="card_text">Reconnaissable par sa grande taille et sa couleur jaune éclatante, le tournesol symbolise la joie et l’énergie. Il suit la lumière du soleil au cours de la journée.</div>
 						</div>
 							<div class="button-group">
@@ -138,7 +138,7 @@
 					<img class="image-icon" alt="orchidee" src="images/orchidee.png">
 					<div class="body">
 						<div class="text">
-							<div class="heading">Orchidée</div>
+							<h3>Orchidée</h3>
 							<div class="card_text">Fleur exotique et sophistiquée, elle représente la beauté, la grâce et la rareté. Elle est souvent offerte comme un signe d’admiration. Réputé sur les îles, on peut la voir à Hawaï.</div>
 						</div>
 							<div class="button-group">
@@ -150,7 +150,7 @@
 					<img class="image-icon" alt="coquelicot" src="images/coquelicot.png">
 					<div class="body">
 						<div class="text">
-							<div class="heading">Coquelicot</div>
+							<h3>Coquelicot</h3>
 							<div class="card_text">Cette fleur rouge vif pousse souvent dans les champs et symbolise à la fois le repos et le souvenir, notamment en hommage aux soldats tombés au combat.</div>
 						</div>
 							<div class="button-group">
@@ -162,7 +162,7 @@
 					<img class="image-icon" alt="violette" src="images/violette.png">
 					<div class="body">
 						<div class="text">
-							<div class="heading">Violette</div>
+							<h3>Violette</h3>
 							<div class="card_text">Petite fleur discrète mais parfumée, la violette est associée à la modestie et à la fidélité. Elle est souvent utilisée pour parfumer des cosmétiques et des confiseries.</div>
 						</div>
 							<div class="button-group">
@@ -170,15 +170,15 @@
 					</div>
 					</div>
 				</div>
-			</div>
+	</section>
 
 
 
 <!-- Avis -->
-			<div class="card-grid-reviews">
+	<section class="card-grid-reviews">
 				<div class="text-heading">
 					<div class="text-heading1">Dernières critiques</div>
-					</div>
+				</div>
 
 
 					<div class="card-grid">
@@ -234,13 +234,13 @@
 
 
 				<div class="review-card">
-						<div class="rating">
-							<img class="star-icon" alt="" src="images/Star.png">
-							<img class="star-icon" alt="" src="images/Star.png">
-							<img class="star-icon" alt="" src="images/Star.png">
-							<img class="star-icon" alt="" src="images/Star.png">
-							<img class="star-icon" alt="" src="images/Star.png">
-						</div>
+					<div class="rating">
+						<img class="star-icon" alt="" src="images/Star.png">
+						<img class="star-icon" alt="" src="images/Star.png">
+						<img class="star-icon" alt="" src="images/Star.png">
+						<img class="star-icon" alt="" src="images/Star.png">
+						<img class="star-icon" alt="" src="images/Star.png">
+					</div>
 				<div class="review-body">
 					<div class="text-heading">
 						<div class="text-heading1">Bouche-bée</div>
@@ -250,21 +250,21 @@
 					</div>
 				</div>
 				<div class="avatar-block">
-						<img class="avatar-icon" alt="" src="images/Marcel.png">
-				<div class="info">
-					<div class="title">Marcel</div>
-					<div class="description">13/12/24</div>
+					<img class="avatar-icon" alt="" src="images/Marcel.png">
+						<div class="info">
+							<div class="title">Marcel</div>
+							<div class="description">13/12/24</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</div>
+	</section>
 
 
 
 <!-- Footer -->
 
-  	<div class="footer">
+  	<footer>
     		<div class="button-list">
       			<img class="socialmedia-icon" alt="logo_x" src="images/x_logo.png">
       			
@@ -279,7 +279,7 @@
 
     		<div class="mentions">
       			<div class="mentions-tittle">
-          					<div class="text-strong">Mentions légales</div>
+          					<h3>Mentions légales</h3>
         				</div>
       	
 
@@ -308,7 +308,7 @@
     		<div class="decouverte">
       			<div class="mentions-tittle">
         				<div class="text-strong">
-          					<div class="text-strong">Découverte</div>
+          					<h3>Découverte</h3>
         				</div>
       			</div>
 
@@ -334,12 +334,12 @@
     		<div class="contact">
       			<div class="mentions-tittle">
         				<div class="text-strong">
-          					<div class="text-strong">Contact</div>
+          					<h3>Contact</h3>
         				</div>
       			</div>
 
 					<div class="list">
-							<div class="list-item">Paul DECHEWSKY</div>
+							<div class="list-item">Lucas Jardin</div>
 					</div>
 					<div class="list">
 							<div class="list-item">Tel : 01 63 45 85 56</div>
@@ -348,13 +348,13 @@
 							<div class="list-item">Fax : 01 63 45 78 52</div>
 					</div>
 					<div class="list">
-							<div class="list-item"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCGmFJVfbcwrKfDFCtHbSVwNnvMkBmjMrcNHdtgQWrBDfRKdBtwGnbKDCqhpqtTWgbJLqq" target="_blank">Dedal@gmail.com </a></div>
+							<div class="list-item"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCGmFJVfbcwrKfDFCtHbSVwNnvMkBmjMrcNHdtgQWrBDfRKdBtwGnbKDCqhpqtTWgbJLqq" target="_blank">lucasjardins.fr </a></div>
 					</div>
 					<div class="list">
 							<div class="list-item"><a href="https://www.google.fr/maps/place/10+Av.+de+la+R%C3%A9publique,+75011+Paris/@48.8665245,2.3617706,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e08126fa2a3:0x8df64dfbdee88e8a!8m2!3d48.8665246!4d2.3666415!16s%2Fg%2F11bw40n1v2?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">10 Rue de la République, 75000, Paris</a></div>
 					</div>
 				</div>
-  		</div>
+	</footer>
   	  		  	
 </body>
 </html>
