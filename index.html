@@ -5,6 +5,129 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/index_style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="application/ld+json">
+	{
+  "@context": "http://schema.org", // Définit le contexte du vocabulaire Schema.org
+  "@type": "LocalBusiness", // Spécifie que l'entité est une entreprise locale (meilleur pour le SEO local ; plumber s'il s'agit d'un plombier)
+  "name": "Lucas Jardin", // Nom de l'entreprise
+  "url": "https://thomasswt.github.io/Lucas-Garden/", // URL officielle du site web qui, encore une fois, n'est que pure invention ici !
+  "logo": "https://thomasswt.github.io/Lucas-Garden/images/logo.png", // URL du logo de l'entreprise
+  "image": "https://thomasswt.github.io/Lucas-Garden/images/jardin1.jpg", // Image représentative, souvent utilisée pour une bannière ou une illustration
+  "description": "Lucas Jardin est une entreprise spécialisée en jardinage, aménagement et décoration d'extérieur. Interventions rapides pour élagage, plantation et pose de gazon.", // Courte description de l'entreprise pour le SEO
+  "address": { // Informations sur l'adresse physique de l'entreprise
+    "@type": "PostalAddress",
+    "streetAddress": "102 Chemin du Génie", // Rue et numéro
+    "addressLocality": "Nice", // Ville
+    "postalCode": "06000", // Code postal
+    "addressCountry": "FR" // Pays
+  },
+  "geo": { // Coordonnées GPS pour un meilleur référencement local
+    "@type": "GeoCoordinates",
+    "latitude": "47.3833088",
+    "longitude": "6.8508433"
+  },
+  "openingHoursSpecification": [ // Heures d'ouverture
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [ // Jours concernés
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
+      ],
+      "opens": "08:00", // Heure d'ouverture
+      "closes": "19:00" // Heure de fermeture
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Saturday", "Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "priceRange": "€€", // Indique une gamme de prix moyenne
+  "paymentAccepted": ["Cash", "CreditCard"], // Modes de paiement acceptés
+  "serviceArea": { // Zone géographique desservie par l'entreprise
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoCircle",
+      "geoMidpoint": { // Point central de la zone d'intervention
+        "@type": "GeoCoordinates",
+        "latitude": "43.7745",
+        "longitude": "7.4975"
+      },
+      "geoRadius": "30" // Rayon de couverture en kilomètres
+    }
+  },
+  "subOrganization": { // Définition d'une sous-organisation (ex : un service spécifique)
+    "@type": "Organization",
+    "name": "Aménagement de terrasses", // Nom du service de dépannage
+    "url": "https://thomasswt.github.io/Lucas-Garden/service_terasses" // URL de la page dédiée
+  },
+  "contactPoint": [ // Informations de contact
+    {
+      "@type": "ContactPoint",
+      "telephone": "+33-1-23-45-67-89", // Numéro général
+      "contactType": "Service client", // Type de contact
+      "areaServed": "FR", // Zone géographique concernée
+      "availableLanguage": ["FR"] // Langue(s) disponible(s)
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+33-6-98-76-54-32", // Numéro d'urgence
+      "contactType": "Lucas", // Spécifie qu'il s'agit du service d'urgence
+      "areaServed": "FR",
+      "availableLanguage": ["FR"]
+    }
+  ],
+  "sameAs": [ // Liens vers les réseaux sociaux et autres profils en ligne
+    "https://www.facebook.com/lucasgarden",
+    "https://www.linkedin.com/company/lucasgarden",
+    "https://twitter.com/lucasgarden"
+  ],
+  "review": [ // Section pour afficher des avis clients
+    {
+      "@type": "Review",
+      "author": { // Auteur de l'avis
+        "@type": "Person",
+        "name": "Viviane"
+      },
+      "reviewRating": { // Note donnée par le client
+        "@type": "Rating",
+        "ratingValue": "4", // Note sur 5
+        "bestRating": "5"
+      },
+      "reviewBody": "Un jardin qui fait du bien" // Commentaire du client
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Louise"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Expérience incroyable" // Deuxième avis client
+    }
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Marcel"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Bouche-bée" // Deuxième avis client
+    }
+  ]
+}
+</script>
+	
 </head>
 
 <body>
