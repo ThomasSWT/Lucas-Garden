@@ -12,4 +12,6 @@ Service Elagage et abattage d'arbres --> Louis FAGGION
 Service Aménagement de terrasses et espaces d'extérieurs --> Louis FAGGION
 Service Aménagements de jardins personsalisés --> Alexis DELAUNE
 Service d'entretien de jardin --> Alexis DELAUNE
+Service Construction de bassins et jardins aquatiques --> Maitena Wyns
+Service Lutte contre les nuisibles et maladies des plants --> Maitena Wyns
 
