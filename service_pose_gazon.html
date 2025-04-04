@@ -1,185 +1,243 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+	<title>Pose de gazon</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="bassins.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pose De Gazon</title>
-    <link rel="stylesheet" href="posedegazon.css">
-
-    <script type="application/ld+json">
+	<script type="application/ld+json">
         {
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "name": "Pose de gazon naturel et synthétique",
-          "description": "Pose de gazon naturel et synthétique pour jardins.",
-          "provider": {
-            "@type": "Organization",
-            "name": "Lucas's Garden",
-            "url": "https://www.lucasjardins.fr"
-          },
-          "areaServed": {
-            "@type": "Place",
-            "name": "Nice, Alpes-Maritimes, France"
-          },
-          "serviceType": "Pose de gazon",
-          "offers": {
-            "@type": "Offer",
-            "price": "15500.00",
-            "priceCurrency": "EUR"
-          }
-        }
-        </script>
+"@context": "https://schema.org",
+"@type": "Service",
+"name": "Pose de gazon",
+"description": "Service professionnel de pose de gazon naturel et synthétique",
+"provider": {
+"@type": "Gardener",
+"name": "Lucas's Garden",
+"url": "https://thomasswt.github.io/Lucas-Garden/",
+"logo": {
+    "@type": "ImageObject",
+    "url": "https://thomasswt.github.io/Lucas-Garden/images/logo.png",
+    "width": 100,
+    "height": 100
+},
+"adress": {
+    "@type": "PostalAdress",
+    "streetAdress": "102 Chemin du Génie",
+    "adressLocality": "Nice",
+    "postalCode": "06000",
+    "adressCountry": "FR"
+},
+"telephone": "+33788760571",
+"email": "contact@lucasjardins.com"
+},
+"areaServed": {
+"@type": "Place",
+"name": "Nice, Nice nord, Nice est et Nice ouest"
+},
+"serviceType": [
+"entretien de jardin",
+        "création de jardins paysagers",
+        "élagage et abattage d'arbres",
+        "plantation de fleurs, arbustes et arbres",
+        "installation de systèmes d'arrosage automatique",
+        "pose de gazon naturel ou synthétique",
+        "aménagement de terrasses et espaces extérieurs",
+        "construction de bassins et jardins aquatiques",
+        "entretien des potagers et jardins biologiques",
+        "lutte contre les nuisibles et maladies des plantes",
+        "création de clôtures et palissades végétales",
+        "location et entretien de plantes pour bureaux et événements"
+],
+"url": "https://thomasswt.github.io/Lucas-Garden/service_pose_gazon.html",
+"image": "https://thomasswt.github.io/Lucas-Garden/images/gazon.png",
+"priceRange": "€€"
+}
+</script>
+
+<!-- Open Graph Meta Tags (pour Facebook, LinkedIn et autres réseaux sociaux) -->
+ <meta property="og:title" content="Lucas's garden, bienvenue">
+ <meta property="og:description" content="Entreprise de jardinage proposant plusieurs services commme l'aménagement d'extérieur ou l'entretien."> 
+ <meta property="og:image" content="https://thomasswt.github.io/Lucas-Garden/images/logo.png"> 
+ <meta property="og:url" content="https://thomasswt.github.io/Lucas-Garden/"> 
+ <meta property="og:type" content="siteweb">
+ <meta property="og:site_name" content="Lucas's garden">
+ <!-- Métadonnées spécifiques au type "profile" -->
+ <meta property="profile:first_name" content="Lucas">
+ <meta property="profile:last_name" content="Jardin">
+ <meta property="profile:username" content="lucas_jardin">
+ <meta property="profile:gender" content="male">
+
+ <!-- Twitter Card Meta Tags (pour un meilleur affichage sur X / Twitter) -->
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:title" content="Lucas Jardin, jardinier de père en fils, une passion commune">
+ <meta name="twitter:description" content="Lucas Jardin est un jardinier étoilé qui prépare des superbes plantes colorées et variées.">
+ <meta name="twitter:image" content="https://thomasswt.github.io/Lucas-Garden/images/Lucas.png">
+ <meta name="twitter:site" content="@lucasgarden"> 
+ <meta name="twitter:creator" content="@lucas_jardin">
 </head>
 
+
 <!-- Header -->
-<body>
-	<section class="header">
-		<a href="#">
+	<header>
+		<a href="index.html">
 			<img class="logo-icon" src="images/logo.png" alt="logo">
 		</a>
-		<div class="navigation-pill-list">
+		
+		<nav class="navigation-pill-list">
 			<div class="navigation-pill dropdown">
 				<a href="#" class="title3">Services</a>
 				<ul class="dropdown-menu">
-					<li><a href="#">Service 1</a></li>
-					<li><a href="#">Service 2</a></li>
-					<li><a href="#">Service 4</a></li>
-					<li><a href="#">Service 5</a></li>
-					<li><a href="#">Service 6</a></li>
-					<li><a href="#">Service 7</a></li>
-					<li><a href="#">Service 8</a></li>
-					<li><a href="#">Service 9</a></li>
-					<li><a href="#">Service 10</a></li>
-					<li><a href="#">Service 11</a></li>
-					<li><a href="#">Service 12</a></li>
+					<li><a href="service_entretien">Entretien de jardin</a></li>
+					<li><a href="service_amenagement">Création de jardins paysagers</a></li>
+					<li><a href="service_elagage">Élagage et abattage d'arbres</a></li>
+					<li><a href="service_plantations">Plantation de fleurs, arbustes et arbres</a></li>
+					<li><a href="service_arosageauto">Installation de systèmes d'arrosage automatique</a></li>
+					<li><a href="service_pose_gazon">Pose de gazon naturel ou synthétique</a></li>
+					<li><a href="service_terasses">Aménagement de terrasses et espaces extérieurs</a></li>
+					<li><a href="service_bassin">Construction de bassins et jardins aquatiques</a></li>
+					<li><a href="service_potager">Entretien des potagers et jardins biologiques</a></li>
+					<li><a href="service_nuisibles">Lutte contre les nuisibles et maladies des plantes</a></li>
+					<li><a href="service_cloture">Création de clôtures et palissades végétales</a></li>
+					<li><a href="service_location_bureaux">Location et entretien de plantes pour bureaux et événements</a></li>
 				</ul>
 			</div>
 			<div class="navigation-pill">
-				<a href="#" class="title3">Réalisations</a>
+				<a href="realisation.html" class="title3">Réalisations</a>
 			</div>
 			<div class="navigation-pill">
-				<a href="#" class="title3">Contacts</a>
+				<a href="contact.html" class="title3">Contacts</a>
 			</div>
 			<div class="navigation-pill">
 				<a href="faq.html" class="title3">FAQ</a>
 			</div>
-		</div>
-	</section>
+		</nav>
+	</header>
 
 
-        <section class="Titre">
-                <h1>Pose de gazon naturel & synthétique</h1>
+
+
+<!-- Main -->
+
+<div class="titrepage">
+    <img class="imagegazon" src="images/gazon.png" alt="image de pose de gazon" style="width:100%;">
+        <section class="grandtitre">
+            <h2>Pose de gazon naturel <br>ou synthétique</h2>
+            <p>Retapissez vos extérieurs en douceur</p>
         </section>
-    
-        <section class="Corps">
-                <h2>Transformez votre espace avec un gazon parfait !</h2>
-        
-                <div class="image-section">
-                        <img src="Images/GazonNaturel.jpg" alt="Gazon naturel">
-                        <img src="Images/GazonSynthetique.jpg" alt="Gazon synthétique">
-                </div>
-        
-                <div class="text-section">
-                <p>Vous rêvez d’un jardin verdoyant toute l’année ou d’un gazon naturel aussi doux que durable ? Ne cherchez plus ! Que vous optiez pour l’authenticité du gazon naturel ou la praticité du synthétique, nous avons la solution idéale pour sublimer votre extérieur.</p>
-                <p>Profitez d’une pose soignée, rapide et adaptée à vos besoins, pour un résultat impeccable sans tracas. Faites le choix du confort, de l’élégance et d’un entretien simplifié.</p>
-                </div>
-        </section>
+</div>
+<br>
+
+<div class="souspartie">
+    <section class="posedegazon">
+        <h3>Transformez votre espace <br>avec un gazon parfait !</h3>
+        <p>Vous rêvez d’un jardin verdoyant toute l’année ? <br>Que vous optiez pour l’authenticité du gazon naturel ou la praticité du synthétique,<br> nous avons la solution idéale pour sublimer votre extérieur.</p>
+        <img class="naturel" src="images/GazonNaturel.jpg" alt="image de gazon naturel">
+    </section>
+
+    <section class="tuyau">
+        <h3>Naturel ou synthétique, <br>cela ne tient qu'à vous !</h3>
+        <p>Profitez d’une pose soignée, rapide et adaptée à vos besoins, pour un résultat impeccable sans tracas.</p>
+        <img class="synthetique" src="images/GazonSynthetique.jpg" alt="image de gazon synthetique">
+    </section>
+</div>
+<br><br>
 
 
 
-        <!-- Footer -->
+<!-- Footer -->
 
-        <div class="footer">
-        <div class="button-list">
-                <img class="socialmedia-icon" alt="logo_x" src="Images/XLogo.png">
-            
-                <img class="socialmedia-icon" alt="logo_instagram" src="Images/LogoInstagram.png">
-            
-                <img class="socialmedia-icon" alt="logo_youtube" src="Images/LogoYouTube.png">
-            
-                <img class="socialmedia-icon" alt="logo_linkedin" src="Images/LinkedIn.png">
-        </div>
+  	<div class="footer">
+    		<div class="button-list">
+      			<img class="socialmedia-icon" alt="logo_x" src="images/x_logo.png">
+      			
+      			<img class="socialmedia-icon" alt="logo_instagram" src="images/instagram_logo.png">
+      			
+      			<img class="socialmedia-icon" alt="logo_youtube" src="images/youtube_logo.png">
+      			
+      			<img class="socialmedia-icon" alt="logo_linkedin" src="images/linkedin_logo.png">
+    		</div>
 
+	
 
+    		<div class="mentions">
+      			<div class="mentions-tittle">
+          					<div class="text-strong">Mentions légales</div>
+        				</div>
+      	
 
-    <div class="mentions">
-            <div class="mentions-tittle">
-                            <div class="text-strong">Mentions légales</div>
-                    </div>
-
-
-                  <div class="list">
-                              <div class="list-item">Numéro d'immatriculation</div>
-                  </div>
-                  <div class="list">
-                              <div class="list-item">Adresse du siège social</div>
-                  </div>
-                  <div class="list">
-                              <div class="list-item">Données personnelles</div>
-                  </div>
-                  <div class="list">
-                              <div class="list-item">Politique de confidentialité</div>
-                  </div>
-                  <div class="list">
-                              <div class="list-item">Charte légale</div>
-                  </div>
-                  <div class="list">
-                              <div class="list-item">Conditions d'utilisations</div>
-                  </div>
-            </div>
-
-
-
-    <div class="decouverte">
-            <div class="mentions-tittle">
-                    <div class="text-strong">
-                            <div class="text-strong">Découverte</div>
-                    </div>
-            </div>
-
-                  <div class="list">
-                              <div class="list-item">Newsletters</div>
-                  </div>
-                  <div class="list">
-                              <div class="list-item">Collaborations</div>
-                  </div>
-                  <div class="list">
-                              <div class="list-item">Twitter</div>
-                  </div>
-                  <div class="list">
-                              <div class="list-item">Instagram</div>
-                  </div>
-                  <div class="list">
-                              <div class="list-item">Linkedin</div>
-                  </div>
-            </div>
+					<div class="list">
+							<div class="list-item">Numéro d'immatriculation</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Adresse du siège social</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Données personnelles</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Politique de confidentialité</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Charte légale</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Conditions d'utilisations</div>
+					</div>
+				</div>
 
 
 
-    <div class="contact">
-            <div class="mentions-tittle">
-                    <div class="text-strong">
-                            <div class="text-strong">Contact</div>
-                    </div>
-            </div>
+    		<div class="decouverte">
+      			<div class="mentions-tittle">
+        				<div class="text-strong">
+          					<div class="text-strong">Découverte</div>
+        				</div>
+      			</div>
 
-                  <div class="list">
-                              <div class="list-item">Paul DECHEWSKY</div>
-                  </div>
-                  <div class="list">
-                              <div class="list-item">Tel : 01 63 45 85 56</div>
-                  </div>
-                  <div class="list">
-                              <div class="list-item">Fax : 01 63 45 78 52</div>
-                  </div>
-                  <div class="list">
-                              <div class="list-item"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCGmFJVfbcwrKfDFCtHbSVwNnvMkBmjMrcNHdtgQWrBDfRKdBtwGnbKDCqhpqtTWgbJLqq" target="_blank">Dedal@gmail.com </a></div>
-                  </div>
-                  <div class="list">
-                              <div class="list-item"><a href="https://www.google.fr/maps/place/10+Av.+de+la+R%C3%A9publique,+75011+Paris/@48.8665245,2.3617706,17z/data=!3m1!4b1!4m6!3m5!1s0x47e66e08126fa2a3:0x8df64dfbdee88e8a!8m2!3d48.8665246!4d2.3666415!16s%2Fg%2F11bw40n1v2?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">10 Rue de la République, 75000, Paris</a></div>
-                  </div>
-            </div>
-  </div>
+					<div class="list">
+							<div class="list-item">Newsletters</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Collaborations</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Twitter</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Instagram</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Linkedin</div>
+					</div>
+				</div>
 
+
+
+    		<div class="contact">
+      			<div class="mentions-tittle">
+        				<div class="text-strong">
+          					<div class="text-strong">Contact</div>
+        				</div>
+      			</div>
+
+					<div class="list">
+							<div class="list-item">Lucas Jardin</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Tel : 01 63 45 85 56</div>
+					</div>
+					<div class="list">
+							<div class="list-item">Fax : 01 63 45 78 52</div>
+					</div>
+					<div class="list">
+							<div class="list-item"><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=CllgCKCGmFJVfbcwrKfDFCtHbSVwNnvMkBmjMrcNHdtgQWrBDfRKdBtwGnbKDCqhpqtTWgbJLqq" target="_blank">lucasjardin.com </a></div>
+					</div>
+					<div class="list">
+							<div class="list-item"><a href="https://g.co/kgs/DMnWbSt" target="_blank">102 Chemin du Génie, 06000, Nice</a></div>
+					</div>
+				</div>
+  		</div>
+  	  		  	
 </body>
 </html>
