@@ -166,7 +166,7 @@ h3{
 .footer {
     width: 100%;
     position: relative;
-    background-color: #1e1e1e;
+    background-color: #8FBC8F;
     border-top: 1px solid #d9d9d9;
     box-sizing: border-box;
     height: 351px;
@@ -182,7 +182,6 @@ h3{
     text-align: left;
     font-size: 16px;
     color: #fff;
-    font-family: "Inter";
 }
 
         .button-list {
@@ -232,7 +231,6 @@ h3{
                 position: relative;
                 font-size: 18px;
                 line-height: 140%;
-                font-family: "Inter";
                 color: #fff;
                 text-align: left;
                 font-weight: bold;
@@ -249,7 +247,6 @@ h3{
             position: relative;
             font-size: 16px;
             line-height: 140%;
-            font-family: Inter;
             color: #fff;
             text-align: left;
             display: inline-block;
@@ -297,131 +294,68 @@ h3{
 
 /*Responsive*/
 
-@media (min-width: 2560px) {
-    .background img{
-        width: 2560px;
-        height: auto;
-        display: block;
-    }
-
-    .main_tittle h1{
-        font-size: 150px;
-    }
-}
-
-@media (max-width: 768px) {
-    .background img{
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .main_tittle h1{
-        font-size: 8vw;
-    }
-}
-
-@media (max-width: 426px) {
-
+@media screen and (max-width: 1024px) {
     .header {
-        position: relative; 
-        background-color: rgba(244, 219, 92);
-        border-bottom: 1px solid #d9d9d9;
-        box-sizing: border-box;
-        height:auto;
-        overflow: hidden;
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
-        flex-wrap:nowrap;
-        align-content: center;
-        padding: 10px;
-        gap: 0px 14px;
-        text-align: left;
-        font-size: 10px;
-        color: #1e1e1e;
+        height: auto;
+        padding: 16px;
     }
 
     .navigation-pill-list {
-        flex: 1;
-        height: 20px;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: flex-end;
-    }
-            .navigation-pill {
-                border-radius: 8px;
-                background-color: #fff;
-                align-items: center;
-                justify-content: center;
-                padding: 4px;
-            }
-  
-    .logo-icon {
-        height: 60px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
-    .background img{
-        width: 100%;
-        height: 550px;
-        display: block;
+    .souspartie {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
-    .main_tittle h1{
-        font-size: 8vw;
+    .creationbassin, .ecosystemeaquatique {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grandtitre {
+        font-size: 30px;
     }
 
     .footer {
-        height: 900px;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 16px;
+        text-align: center;
     }
 
-    .mentions {
-        width: 220px;
-        margin: 0 !important;
-        position: absolute;
-        top: 70px;
-        left: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 12px;
-        z-index: 1;
-        font-weight: bold;
+    .mentions, .decouverte, .contact {
+        position: static;
+        width: auto;
+        text-align: center;
     }
-    
-    
-    .decouverte {
-        width: 122px;
-        margin: 0 !important;
-        position: absolute;
-        top: 350px;
-        left: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 12px;
-        z-index: 2;
-        font-weight: bold;
-    
-    }
-    .contact {
-        width: 282px;
-        margin: 0 !important;
-        position: absolute;
-        top: 600px;
-        left: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 12px;
-        z-index: 3;
-        font-weight: bold;
-    
+}
+
+@media screen and (max-width: 480px) {
+    .logo-icon {
+        width: 80px;
+        height: 80px;
     }
 
+    .navigation-pill {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .grandtitre {
+        font-size: 24px;
+    }
+
+    .bassin, .aquatique {
+        height: auto;
+        width: 100%;
+    }
 }
