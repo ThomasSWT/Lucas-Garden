@@ -375,19 +375,19 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-    .grandtitre {
+    .main_tittle {
         font-size: 30px;
     }
 
-    .card-grid-image {
+    .card-grid-reviews {
         height: auto;
         }
     
-    .line_cards {
+    .review_cards {
         height: auto;
     }
         
-    .card {
+    .review_body {
         width: 350px;        
     }
 
@@ -418,7 +418,7 @@ header {
         font-size: 14px;
     }
 
-    .grandtitre {
+    .main_tittle {
         font-size: 24px;
     }
 
