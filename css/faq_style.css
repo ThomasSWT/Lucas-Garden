@@ -383,6 +383,17 @@ header {
 
 
 @media (max-width: 768px) {
+   header{
+    height: 200px;
+    position: sticky;
+
+}
+
+.logo-icon {
+    position: relative;
+    left: 300%;
+}
+
     .background img{
         width: 100%;
         height: auto;
