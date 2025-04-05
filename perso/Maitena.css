@@ -1,0 +1,16 @@
+body{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color:#DCDCDC;
+}
+
+.titre{
+    color:#008B8B;
+}
+
+h2{
+    color:#ffa500;
+}
+
+h2:hover{
+    font-size:xx-large;
+}
