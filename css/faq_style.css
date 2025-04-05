@@ -364,9 +364,6 @@ header {
         display: block;
     }
 
-    .main_tittle h1{
-        font-size: 150px;
-    }
 
     .card-grid-image {
         height: auto;
@@ -383,7 +380,8 @@ header {
 
 
 @media (max-width: 768px) {
-   header{
+
+header{
     height: 200px;
     position: sticky;
 
@@ -394,15 +392,8 @@ header {
     left: 300%;
 }
 
-    .background img{
-        width: 100%;
-        height: auto;
-        display: block;
-    }
 
-    .main_tittle h1{
-        font-size: 8vw;
-    }
+
 
     .card-grid-image {
         height: auto;
@@ -417,56 +408,36 @@ header {
     }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 550px) {
 
-    .header {
-        position: relative; 
-        background-color: rgba(244, 219, 92);
-        border-bottom: 1px solid #d9d9d9;
-        box-sizing: border-box;
-        height:auto;
-        overflow: hidden;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        flex-wrap:nowrap;
-        align-content: center;
-        padding: 10px;
-        gap: 0px 14px;
-        text-align: left;
-        font-size: 10px;
-        color: #1e1e1e;
-    }
-
-    .navigation-pill-list {
-        flex: 1;
-        height: 20px;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: flex-end;
-    }
-            .navigation-pill {
-                border-radius: 8px;
-                background-color: #fff;
-                align-items: center;
-                justify-content: center;
-                padding: 4px;
-            }
-  
     .logo-icon {
-        height: 60px;
+        position: relative;
+        left: 150%;
+        padding-bottom: 10px;
     }
+
+header {
+        height: 200px;
+        width: 100%;
+    }
+
+.navigation-pill-list{
+    width: 100%;
+    margin-left: 30px;
+}
+
+.navigation-pill{
+    width: 15px;
+}
+
+
+
+  
 
     .background img{
         width: 100%;
         height: 550px;
         display: block;
-    }
-
-    .main_tittle h1{
-        font-size: 8vw;
     }
 
     .footer {
@@ -485,7 +456,6 @@ header {
         justify-content: flex-start;
         gap: 12px;
         z-index: 1;
-        font-weight: bold;
     }
     
     
@@ -501,8 +471,6 @@ header {
         justify-content: flex-start;
         gap: 12px;
         z-index: 2;
-        font-weight: bold;
-    
     }
     .contact {
         width: 282px;
@@ -516,8 +484,6 @@ header {
         justify-content: flex-start;
         gap: 12px;
         z-index: 3;
-        font-weight: bold;
-    
     }
 
 }
